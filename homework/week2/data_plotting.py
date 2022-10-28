@@ -12,3 +12,6 @@ plt.plot(x,y)
 plt.gcf().autofmt_xdate()
 
 plt.show()
+
+#Saving the plot as an image
+plt.savefig('first plot.jpg', bbox_inches='tight', dpi=150)
