@@ -1,0 +1,5 @@
+https://api.binance.com <------ Root URL. #Q1
+
+/api/v3/klines <-------Endpoint.  #Q2
+
+https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1m&startTime=1661983200000&limit=75 <-------75 observations of klines data.  #Q2
