@@ -1,4 +1,5 @@
-# mid-term work grom group JNRY
+# mid-term work from group JNRY
+
 Jakob
 Nina
 Rohit
