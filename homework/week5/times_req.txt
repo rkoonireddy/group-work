@@ -1,3 +1,0 @@
-Time spent to Feather file: 0.13899898529052734 seconds 
-Time spent to HDF file: 0.5465400218963623 seconds 
-Time spent to Parquet file: 0.1323261260986328 seconds 
