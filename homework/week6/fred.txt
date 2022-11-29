@@ -1,0 +1,8 @@
+6edb8921f89325781164e418......... <------ API key (Deleted the last few digits) #Q1
+
+https://api.stlouisfed.org <------ Root URL. #Q2
+
+/fred/series/observations <-------Endpoint.  #Q3
+
+https://api.stlouisfed.org/fred/series/observations?series_id=UNRATE&api_key=abc123&observation_start=2020-01-01 <-------Query string.
+If you run this it will generate an error. If you replace the fake api key (abc123 ) with the real one then you'll get the data #Q4
