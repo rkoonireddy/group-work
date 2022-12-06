@@ -1,0 +1,20 @@
+The goal of this paper is to assess wheter there is any connection between the 10 year treasury yiel and cryptocurrencies. To detect a potential connection we relied on classical statistical measures: covariance and correlation.
+
+\subsection{Covariance}
+The covariance is a measure to relate the movement of two random variables. A positive covariance indicates that the two variables move in the same direction. A negative covariance means that the variables move inversely, meaning that if one increases, the other one will decrease and vice versa. Therefore, covariance measures the direction of a relation. The covariance is given by the following formula:
+\begin{center}
+   \large $cov_{x,y}=\frac{\sum_{i=1}^{N}(x_{i}-\bar{x})(y_{i}-\bar{y})}{N-1}$
+\end{center}
+By calculating the Covariance we can examine the direction of a potential relationship between the 10 year treasury yield and the cryptocurrencies.
+
+\subsection{Pearson's Correlation}
+Similarly to the covariance, also the correlation is a measure for relationship. The correlation measures the strength of a relationship. The correlation coefficient lives on the inverval between negative one and one. The higher the absolute value, the stronger is the observed relationship. A correlation of zero indicates no relationship between the observed variables. Therefore, this measure is very intersting for our resarch question. Depending on the correlation we can assess how strong the relationship between the 10 year treasury yield and the cryptocurrencies is (if any).
+First, we assess the Pearson's correlation. The Pearson coefficient will will measure any linear relationships between the variables. There is a linear relationship when a change in the first variable causes a proportional change in the second variable.
+
+
+\subsection{Spearman's Correlation}
+As we have seen above, the Pearson's correlation has its limits. Namely it is limited at measuring linear relationships. We therefore also introduce a second correlation measure, called the Spearman's correlation. The Spearman’s correlation coefficient extends the concept to non-linear, monotonic functions. Simply put, monotonic functions are functions that do not change direction but can have different steepness throughout. 
+
+
+\subsection{Implementation}
+The analysis was conducted using the programming language Python, making use of its functionalities. For the computations we relied on the \emph{pandas} package. We calculated the covariances within our data set using the \emph{data.cov()} function. Similarly, correlation was computed using the \emph{data.corr()} function, with specifications \emph{method='pearson'} and \emph{method='spearman'} accordingly. These are basic functions available in many programming languages. To ensure robustness of results, it is advisable to have a look at the documentation of the functions when using a different programming language, to ensure the functions are equal to the ones used in this paper.
