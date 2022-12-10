@@ -60,7 +60,7 @@ Yunxiang Guo (XX-XXX-XX, yunxiang.guo@uzh.ch)\\}
 Through an API we accessed price data from yahoo over a period of 5 years (2018-2022). Finally, the data set comprises:
  \begin{itemize}
         \item 4 crytpocurrencies: \\
-        Bitcoin \includegraphics[width=0.05\textwidth]{Bitcoin.png}, Ethereum \includegraphics[width=0.035\textwidth]{ETH.png}, XRP \includegraphics[width=0.05\textwidth]{XRP.png}, Litecoin \includegraphics[width=0.05\textwidth]{LTC.png}
+        Bitcoin \includegraphics[width=0.05\textwidth]{images/Bitcoin.png}, Ethereum \includegraphics[width=0.035\textwidth]{images/ETH.png}, XRP \includegraphics[width=0.05\textwidth]{images/XRP.png}, Litecoin \includegraphics[width=0.05\textwidth]{images/LTC.png}
         
         \medskip
         
@@ -71,6 +71,18 @@ Through an API we accessed price data from yahoo over a period of 5 years (2018-
         \item 10 Year US Treasury Rate
     \end{itemize}
 
+\end{frame}
+
+% ---------------------------------------------------------
+
+\begin{frame}{Data}
+  \centering
+    \includegraphics[width=9cm,keepaspectratio]{images/movement_crypto.png}
+    
+    \vspace{2}
+    \includegraphics[width=9cm,keepaspectratio]{images/movement_treasury.png}\\
+     
+\tiny{\textit{Note.} Own representation.}
 \end{frame}
 
 % ---------------------------------------------------------
@@ -89,27 +101,43 @@ We measure the relationship through:
 % ---------------------------------------------------------
 \section{Results}
 \begin{frame}{Results - 1. Covariance}
-    tbd
+
+    \centering
+    \includegraphics[height=7cm,keepaspectratio]{images/covariance_heatmap.png} \\
+
+\tiny{\textit{Note.} Own representation.}
 \end{frame}
 
 % ---------------------------------------------------------
 
 
 \begin{frame}{Results - 2. Pearson’s Correlation (linear)}
-    tbd
+
+    \centering
+    \includegraphics[height=7cm,keepaspectratio]{images/pearson_heatmap.png}
+
+\tiny{\textit{Note.} Own representation.}
 \end{frame}
 
 % ---------------------------------------------------------
 
 \begin{frame}{Results - 3. Spearman’s Correlation (monotonic)}
-    tbd
+\centering
+    (The Spearman's correlation did not give further insights.)
 \end{frame}
 
 % ---------------------------------------------------------
 
 \section{Conclusion}
 \begin{frame}{Conclusion}
-    tbd
+    \begin{itemize}
+    \item Close-to-zero covariance
+    \item Negligible correlation ($<$0.1)
+    \end{itemize}
+    
+\vspace{20}
+    
+\fbox{\parbox{\linewidth}{\textbf{No significant correlation between hikes in the risk-free rate and cryptocurrency returns.}}}
 \end{frame}
 
 % ---------------------------------------------------------
@@ -118,6 +146,10 @@ We measure the relationship through:
 
 \begin{center}
     Thank you!
+
+
+    \vfill
+    \tiny{This presentation is part of the final project for Digital Tools for Finance (L) (03SMDFOEC008) by Igor Pozdeev, Department of Banking and Finance, University of Zurich. Refer to GitHub for the full project.}
 \end{center}
 
 \end{frame}
