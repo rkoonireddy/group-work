@@ -11,27 +11,30 @@ Project Organization
 ------------
 
     ├── LICENSE
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── docs               <- Folder to show any dependencies and other configuration information
+    ├── README.md              <- The top-level README for developers using this project.
+    ├── docs                   <- Folder to show any dependencies and other configuration information
     │
-    ├── test-code             <- Shows intermediate test code before the final project
+    ├── test-code              <- Shows intermediate test code before the final project
     │
-    ├── final-code          <- Contains the final project file in .ipynb format.
+    ├── final-code             <- Contains the final project file in .ipynb format.
     │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
+    ├── references             <- Data dictionaries, manuals, and all other explanatory materials.
     │
-    ├── reproducibility-docker            <- folder with docker files and a do-it-yourself file to access the code and play with it. 
+    ├── reproducibility-docker <- folder with docker files and a do-it-yourself file to access the code and play with it. 
     |
-    ├── app            <- folder with app.
+    ├── app                    <- folder with app.
     |
-    ├── project-report            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
+    ├── project-report         <- Generated analysis LaTeX
+    │   └── paper              <- Generated graphics and figures used in report
+    │      └── images
+    │   └── presentation       <- LaTeX beamer presentation of generated analysis
+    │      └── images          <- Generated graphics and figures used in presentation
     │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
+    ├── requirements.txt       <- The requirements file for reproducing the analysis environment, e.g.
     │ 
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
+    ├── setup.py               <- makes project pip installable (pip install -e .) so src can be imported
     │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+    └── tox.ini                <- tox file with settings for running tox; see tox.readthedocs.io
 
 
 --------
