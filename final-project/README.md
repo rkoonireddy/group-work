@@ -25,10 +25,10 @@ Project Organization
     ├── app                    <- folder with app.
     |
     ├── project-report         <- Generated analysis LaTeX
-    │   └── paper              <- Generated graphics and figures used in report
-    │      └── images
-    │   └── presentation       <- LaTeX beamer presentation of generated analysis
-    │      └── images          <- Generated graphics and figures used in presentation
+    │   └── paper              <- LaTeX report
+    │      └── images          <- Graphics and figures used in report
+    │   └── presentation       <- LaTeX beamer presentation
+    │      └── images          <- Graphics and figures used in presentation
     │
     ├── requirements.txt       <- The requirements file for reproducing the analysis environment, e.g.
     │ 
