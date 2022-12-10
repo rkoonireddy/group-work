@@ -3,18 +3,15 @@ final-project
 
 Final project for Digital Tools for Finance 2022
 
+Interactive jupyter notebook hosted on Binder <use this to interact with code and make changes>
+------------
+https://mybinder.org/v2/gh/ncanto/group-work/fe0f277a2876f1800f6586f74e9491bad7b677cc?urlpath=lab%2Ftree%2Ffinal-project%2Fnotebooks%2FResearch_Final.ipynb
+
 Project Organization
 ------------
 
     ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
     ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
     ├── docs               <- Folder to show any dependencies and other configuration information
     │
     ├── models             <- Shows intermediate test code before the final project
@@ -46,6 +43,8 @@ Project Organization
     │   │
     │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
     │       └── visualize.py
+    │
+    │       
     │
     └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
 
