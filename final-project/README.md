@@ -5,7 +5,7 @@ Final project for Digital Tools for Finance 2022
 
 Interactive jupyter notebook hosted on Binder <use this to interact with code and make changes>
 ------------
-https://mybinder.org/v2/gh/ncanto/group-work/fe0f277a2876f1800f6586f74e9491bad7b677cc?urlpath=lab%2Ftree%2Ffinal-project%2Fnotebooks%2FResearch_Final.ipynb
+https://mybinder.org/v2/gh/ncanto/group-work.git/main?labpath=final-project%2Ffinal-code%2FResearch_Final.ipynb 
 
 Project Organization
 ------------
