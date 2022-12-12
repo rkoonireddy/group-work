@@ -18,4 +18,13 @@ As we have seen above, the Pearson's correlation has its limits. Namely it is li
 
 
 \subsection{Implementation}
-The analysis was conducted using the programming language Python, making use of its functionalities. For the computations we relied on the \emph{pandas} package. We calculated the covariances within our data set using the \emph{data.cov()} function. Similarly, correlation was computed using the \emph{data.corr()} function, with specifications \emph{method='pearson'} and \emph{method='spearman'} accordingly. These are basic functions available in many programming languages. To ensure robustness of results, it is advisable to have a look at the documentation of the functions when using a different programming language, to ensure the functions are equal to the ones used in this paper.
+The analysis was conducted using the programming language Python, making use of its functionalities. For the computations we relied on the \emph{pandas} package. We calculated the covariances within our data set using the \emph{data.cov()} function. Similarly, correlation was computed using the \emph{data.corr()} function, with specifications \emph{method='pearson'} and \emph{method='spearman'} accordingly. These are basic functions available in many programming languages.
+
+\subsection{Reproducibility}
+When creating this project we put an emphasis on reproducibility and robustness of results. For anyone to reproduce our analysis we have set up the following two possibilities:
+
+\paragraph{Binder} One can use a simple online service called Binder Interactive (\url{mybinder.org}). To interactively run our code on jupyter lab one can use the following link directly without downloading: \url{https://mybinder.org/v2/gh/ncanto/group-work.git/main?labpath=final-project\%2Ffinal-code\%2FResearch\_Final.ipynb}
+
+\paragraph{Docker} Using the docker image file we created one can get our docker image from the following link on docker hub: \emph{docker pull rkoonireddy/d2ff-final}
+
+
