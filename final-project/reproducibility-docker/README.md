@@ -21,7 +21,7 @@ Using the docker image file we created
 you can get our docker image from the following link on docker hub: <docker pull rkoonireddy/d2ff-final>
 
 You must run the following commands interactively:
-1. < docker run -it -p 8888:8888 jrny-final bash > 
+1. < docker run -it -p 8888:8888 d2ff-final bash > 
 --> this takes you into our docker image, then run this
 2. < jupter lab --ip='0.0.0.0' --port=8888 --no-browser --allow-root >
 once the second command is executed, you will see links to open jupyter lab in your browser. open it and open the attached ipynb file there. 
