@@ -5,7 +5,7 @@ Department of Banking and Finance, University of Zurich, Igor Pozdeev
 
 **Authors:** 
 
-Jakob Pirs (XX-XXX-XX, jakob.pirs@uzh.ch)
+Jakob Pirs (22-714-166, jakob.pirs@uzh.ch)
 Nina Erminia Cantoni (17-709-221, ninaerminia.cantoni@uzh.ch)
 Rohit Koonireddy (20-622-924, rohit.koonireddy@bf.uzh.ch)
 Yunxiang Guo (XX-XXX-XX, yunxiang.guo@uzh.ch)
