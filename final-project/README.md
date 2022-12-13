@@ -31,11 +31,6 @@ Project Organization
     │      └── images          <- Graphics and figures used in presentation
     │
     ├── requirements.txt       <- The requirements file for reproducing the analysis environment, e.g.
-    │ 
-    ├── setup.py               <- makes project pip installable (pip install -e .) so src can be imported
-    │
-    └── tox.ini                <- tox file with settings for running tox; see tox.readthedocs.io
-
 
 --------
 
