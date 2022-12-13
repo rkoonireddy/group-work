@@ -29,8 +29,6 @@ Project Organization
     │      └── images          <- Graphics and figures used in report
     │   └── presentation       <- LaTeX beamer presentation
     │      └── images          <- Graphics and figures used in presentation
-    │
-    ├── requirements.txt       <- The requirements file for reproducing the analysis environment, e.g.
 
 --------
 
