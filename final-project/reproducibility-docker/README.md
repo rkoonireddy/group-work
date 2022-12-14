@@ -1,21 +1,21 @@
 We created two ways to replicate our project for you to interact using jupyter-labs: 
 
-Method 1 - using binder
+## Method 1 - using binder
 ---------------
 
 Using a simple online service called Binder Interactive. You can find more information about binder here: https://mybinder.org/
 
 --> To interactively run our code on jupyter lab you can use the following link directly without downloading here:
-"" 
+
 https://mybinder.org/v2/gh/ncanto/group-work.git/main?labpath=final-project%2Ffinal-code%2FResearch_Final.ipynb 
 
 or 
 
 https://mybinder.org/v2/gh/ncanto/group-work/d18d6bccff58fa0962301df49707a97b33ae4d33?urlpath=lab%2Ftree%2Ffinal-project%2Ffinal-code%2FResearch_Final.ipynb
 
-"" 
 
-Method 2 - docker image
+
+## Method 2 - docker image
 ---------
 Using the docker image file we created
 you can get our docker image from the following link on docker hub: <docker pull rkoonireddy/d2ff-final>
