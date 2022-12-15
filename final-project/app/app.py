@@ -1,5 +1,5 @@
 import pip 
-pip.main(['install', 'pandas','numpy','flask','flask-sqlalchemy','click','pandas-datareader','matplotlib','pyarrow'])
+pip.main(['install', 'pandas','numpy','flask>=2.2','flask-sqlalchemy','click','pandas-datareader','matplotlib','pyarrow'])
 
 import os
 import sys
