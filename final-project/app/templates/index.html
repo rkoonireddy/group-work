@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{{ name }}'s FINAL-PROJECT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"> </script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+</head>
+</head>
+
+
+
+<body>
+    <div class="container" style="background-color: aliceblue; height: fit-content;">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container" style="background-color: rgb(144, 171, 195); height: max-content;">
+              <a class="navbar-brand" href="#">FINAL-PROJECT</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" type= "button" onclick = "Introduction()" aria-current="page" href="#" id="introduction">Introduction</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#" id = "currency">Currency</a>
+                  </li>
+             
+                  <li class="nav-item">
+                    <a class="nav-link active" id="analysis">Analysis</a>
+                  </li>
+                </ul>
+            
+              </div>
+            </div>
+          </nav>
+        
+        
+
+
+        <div data-spy="scroll" data-target="#navbarExample" data-offset="50" class="scrollspy-example">
+            <h3 id="introduction">1. INTRODCUTION</h3>
+                <P>This is the website for the project of Digital Tools for Finance 2022, University of Zurich</P>
+                <p>Porject Topic:</p>
+                    <p style="text-indent:50px">
+                            How do cryptocurrency exchange rates react to Fed rate changes?    
+                    </p>
+                <p>For our final project, we will conduct a study of how has the Fed rate hikes affected the exchange rates. </p>
+            <h3 id="currency">2. CURRENCY</h3>
+                <p>
+                    The changements of six currencies in the project will be plotted in this part, thus getiing a intuitive understanding along the given time line.
+            
+                </p>
+                <p>We choose the date from 2018,1,1 to 2022, 11, 11 as the time frame. This part includes Quantitative Easing/Rate cutes and how does that affect it.
+
+                </p>
+                <p> 
+                    We would get the spot prices for different categories of crypto currencies, for example,
+                    the originals (ETH,BTC), meme coins (shiba, doge), Layer 1's (Luna, Solana) etc. 
+                    
+                </p>
+                <p>CLICK BUTTON TWICE TO CHECK THE PLOTS</p>
+                <div class="btn-group">
+                    <button type="button"  id = "Cryptocurrencies" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Cryptocurrencies <span class="caret"></span>
+                    </button>
+                    <p>{{ data_column_headers|length }} currencies</p>
+                    <ul class="dropdown-menu">
+                        {% for cur in data_column_headers %}  {#  show data_column_headers  #}
+                        <li><a href="#" id = "currency_{{cur}}">{{cur}}</a></li>  {# equal to data_column_headers['title'] #}
+                        <img src="" alt="" id="{{cur}}">
+                        {% endfor %}  {# use "endfor" to finish "for" #}
+                        
+                        
+
+                    <li role="separator" class="divider"></li>
+                    <li><a type="button" onclick="github()" href="#">Github Site</a></li>
+                    </ul>
+                </div>
+                
+
+            <h3 id="analysis">3. ANALYSIS</h3>
+            
+            <p>We observe other metrics such as volatility, correlation and so on.</p>
+            <div class="btn-group">
+                <button type="button" id = "mean" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Mean <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                <li><a href="#" id="mean_bar">Bar Chart</a></li>
+                </ul>
+            </div>
+           
+           <div></div>
+            <div class="btn-group">
+                <button type="button" id = "Cryptocurrencies" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Covariance <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" id="cov_line">Line Graph</a></li>
+                    <li><a href="#" id="cov_heat">Heatmap</a></li>
+                
+                </ul>
+            </div>
+            
+
+            <div></div>
+            <div class="btn-group">
+                <button type="button" id = "Cryptocurrencies" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Correlation <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                <li><a href="#" id="cor_line">Line Graph</a></li>
+                <li><a href="#" id="cor_heat">Heatmap</a></li>
+                </ul>
+            </div>
+            <div></div>
+            <p>MEAN</p>
+            <img src="" alt="" id="im"/>
+            <img src="" alt="" id="im1"/>
+            <img src="" alt="" id="im2"/>
+            <img src="" alt="" id="im3"/>
+            <div></div>
+        
+            <p>COVARIANCE</p>
+            <img src="" alt="" id="im_cov_line"/>
+            <img src="" alt="" id="im_cov_heat"/>
+            <div></div>
+            <p>CORRELATION</p>
+            <img src="" alt="" id="im_cor_line"/>
+            <img src="" alt="" id="im_cor_heat"/>
+
+    
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+        
+        
+    </div>
+    <script>
+
+        // github link
+        function github() {
+		window.location.href= 'https://github.com/ncanto/group-work';
+	    }
+
+
+        // analysis results MEAN
+        var btObject = document.getElementById("mean_bar");
+        //event
+        btObject.onclick = function () {
+            //image
+            var imObject = document.getElementById("im");
+            imObject.src = "static/results/mean1.png";
+            var imObject = document.getElementById("im1");
+            imObject.src = "static/results/mean2.png";
+            var imObject = document.getElementById("im2");
+            imObject.src = "static/results/mean3.png";
+            var imObject = document.getElementById("im3");
+            imObject.src = "static/results/mean4.png";
+            
+            //size of the images
+            imObject.width = "300";
+            imObject.height = "300";
+        };
+         // analysis results-COV
+         var btObject = document.getElementById("cov_line");
+        //event
+        btObject.onclick = function () {
+            //image
+            var imObject = document.getElementById("im_cov_line");
+            imObject.src = "static/results/Covariance between indicators.png";
+            
+            //size of the images
+            imObject.width = "300";
+            imObject.height = "300";
+        };
+
+         // analysis results - COV
+         var btObject = document.getElementById("cov_heat");
+        //event
+        btObject.onclick = function () {
+            //image
+            var imObject = document.getElementById("im_cov_heat");
+            imObject.src = "static/results/Covariance heatmap.png";
+            //size of the images
+            imObject.width = "300";
+            imObject.height = "300";
+        };
+
+         // analysis results-COR
+         var btObject = document.getElementById("cor_line");
+        //event
+        btObject.onclick = function () {
+            //image
+            var imObject = document.getElementById("im_cor_line");
+            imObject.src = "static/results/Correlation between indicators.png";
+            
+            //size of the images
+            imObject.width = "300";
+            imObject.height = "300";
+        };
+
+         // analysis results - COR
+         var btObject = document.getElementById("cor_heat");
+        //event
+        btObject.onclick = function () {
+            //image
+            var imObject = document.getElementById("im_cor_heat");
+            imObject.src = "static/results/Correlation heatmap.png";
+            //size of the images
+            imObject.width = "300";
+            imObject.height = "300";
+    
+        };
+
+        
+         // currency
+        var btObject = document.getElementById("currency_ETH");
+        //event
+        btObject.onclick = function () {
+            //image
+            var imObject = document.getElementById("ETH");
+            imObject.src = "static/results/ETH.png";
+            
+            //size of the images
+            imObject.width = "1200";
+            imObject.height = "300";
+        };
+         // currency
+         var btObject = document.getElementById("currency_BTC");
+        //event
+        btObject.onclick = function () {
+            //image
+            var imObject = document.getElementById("BTC");
+            imObject.src = "static/results/BTC.png";
+            
+            //size of the images
+            imObject.width = "1200";
+            imObject.height = "300";
+        };
+
+
+         // currency
+         var btObject = document.getElementById("currency_CMC200");
+        //event
+        btObject.onclick = function () {
+            //image
+            var imObject = document.getElementById("CMC200");
+            imObject.src = "static/results/CMC200.png";
+            
+            //size of the images
+            imObject.width = "1200";
+            imObject.height = "300";
+        };
+
+
+         // currency
+         var btObject = document.getElementById("currency_LTC");
+        //event
+        btObject.onclick = function () {
+            //image
+            var imObject = document.getElementById("LTC");
+            imObject.src = "static/results/LTC.png";
+            
+            //size of the images
+            imObject.width = "1200";
+            imObject.height = "300";
+        };
+
+
+         // currency
+         var btObject = document.getElementById("currency_TNX");
+        //event
+        btObject.onclick = function () {
+            //image
+            var imObject = document.getElementById("TNX");
+            imObject.src = "static/results/TNX.png";
+            
+            //size of the images
+            imObject.width = "1200";
+            imObject.height = "300";
+        };
+
+
+         // currency
+         var btObject = document.getElementById("currency_XRP");
+        //event
+        btObject.onclick = function () {
+            //image
+            var imObject = document.getElementById("XRP");
+            imObject.src = "static/results/XRP.png";
+            
+            //size of the images
+            imObject.width = "1200";
+            imObject.height = "300";
+        };
+
+
+    </script> 
+</body>
+</html>
