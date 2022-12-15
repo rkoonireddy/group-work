@@ -1,5 +1,0 @@
-1. Tpye "python app.py" in the bash terminal
-2. Click the url in the terminal, for example, it shows (Running on http://127.0.0.1:5000), then ctrl + click http://127.0.0.1:5000. You will directed to the webpage. 
-3. Check the website and get to know more about the project.
-
-// if it does not work above, then just open the "Digital Tools for Finance's FINAL-PROJECT.html", it works the same.
