@@ -2,25 +2,27 @@ In a first step, we evaluated the covariance of the cryptocurrencies (BTC, ETH, 
 \\
 
 
-But what about the magnitude of the relation? This question can be answered with the Perason's correlation measure. The results are summarized below in Table \ref{fig:pearson}. We find a strong correlation between the various cryptocurrencies. This is not surprising. The different cryptocurrencies are substitutes of one another and most likely face the same demand trends. More interesting for our research question is the correlation between the 10yr treasury yield and the cryptocurrencies. The correlations are very weak. All of them are below 0.1 which according to \citet{corr} should be interpreted as a negligible connection. The highest correlation with the risk-free rate is achieved by the CMC 200 index, however also with very low magnitude (0.039). \\
+But what about the magnitude of the relation? This question can be answered with the Perason's correlation measure. The results are summarized below in Figure \ref{fig:pearson}. We find a strong correlation between the various cryptocurrencies. This is not surprising. The different cryptocurrencies are substitutes of one another and most likely face the same demand trends. More interesting for our research question is the correlation between the 10yr treasury yield and the cryptocurrencies. The correlations are very weak. All of them are below 0.1 which according to \citet{corr} should be interpreted as a negligible connection. The highest correlation with the risk-free rate is achieved by the CMC 200 index, however also with very low magnitude (0.039). \\
 
 The last part of the analysis consists of calcualting the Spearman's correlation coefficient. With this approach we try to control for potential non-linear relationships. However, the results are fairly similar to before. Especially, the correlation between the risk-free rate and the cryptocurrencies is still negligible.\\
 
 
-\begin{figure}[!h]
+\begin{figure}[!ht]
     \centering
-    \textbf{\caption{Covariance}}
-    \includegraphics[width=0.8\textwidth,height=\textheight,keepaspectratio]{images/covariance_heatmap.png}
-    \label{fig:cov} \\
+    \caption{Covariance}
+    \label{fig:cov} 
+    \includegraphics[width=0.75\textwidth,height=\textheight,keepaspectratio]{images/covariance_heatmap.png}
+    \\
     
     \note{\textit{Note.} Own representation.}
 \end{figure} 
 
 \begin{figure}[!ht]
     \centering
-    \textbf{\caption{Pearson's Correlation}}
-    \includegraphics[width=0.8\textwidth,height=\textheight,keepaspectratio]{images/pearson_heatmap.png}
-    \label{fig:pearson}\\
+    \caption{Pearson's Correlation}
+    \label{fig:pearson}
+    \includegraphics[width=0.75\textwidth,height=\textheight,keepaspectratio]{images/pearson_heatmap.png}
+    \\
     
     \note{\textit{Note.} Own representation.}
 \end{figure}
