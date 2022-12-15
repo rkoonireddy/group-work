@@ -1,3 +1,6 @@
+import pip 
+pip.main(['install', 'pandas','numpy','flask','flask-sqlalchemy','click','pandas-datareader','matplotlib','pyarrow'])
+
 import os
 import sys
 
@@ -9,7 +12,7 @@ import pandas as pd
 import pandas_datareader.data as web
 import datetime as dt
 import matplotlib.pyplot as plt
-import seaborn as sns
+# import seaborn as sns
 import numpy as np
 
 import matplotlib
