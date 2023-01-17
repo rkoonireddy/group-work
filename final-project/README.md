@@ -12,11 +12,11 @@ The [Final Code](final-code) folder contains the necessary code for running the 
 
 ## LaTeX and visualization
 
-The [Project repport](project-report) folder contains the [Paper](project-report/paper) and [Presentation](project-report/presentation) files. The former includes all files associated with the LaTeX part of the documentation, which was completed using Overleaf. The latter includes a beamer presentation.
+The [Project report](project-report) folder contains the [Paper](project-report/paper) and [Presentation](project-report/presentation) files. The former includes all files associated with the LaTeX part of the documentation, which was completed using Overleaf. The latter includes a beamer presentation.
 
 ## Reproducibility
 
-We have implemented two methods for reproducing our project. The first method involves using [Dockerfile](reproducibility-docker/Dockerfile).The second method involves using [Binder](https://mybinder.org/v2/gh/ncanto/group-work.git/main?labpath=final-project%2Ffinal-code%2FResearch_Final.ipynb). Both of these methods allow users to easily reproduce the project and its results.
+We have implemented two methods for reproducing our project. The first method involves using [Dockerfile](reproducibility-docker/Dockerfile).The second method involves using [Binder](https://mybinder.org/v2/gh/ncanto/group-work/5d10b8f72b817d1451b802b1e7b03e85be03832e?urlpath=lab%2Ftree%2Ffinal-project%2Ffinal-code%2FResearch_Final.ipynb). Both of these methods allow users to easily reproduce the project and its results.
 
 The [Test code](test-code) folder contains code that we experimented with during development but did not include in the final version of the application. As a result, this folder has been added to the .gitignore file to prevent its contents from being committed to the repository.
     
